@@ -1,0 +1,164 @@
+.example{
+	position: relative;
+	&__item{
+	
+		height: 360px;
+		background: rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
+		
+		margin: 0 auto;
+		color: white;
+		font-family: PTSans;
+		font-size: 16px;
+		box-sizing: border-box;
+		padding: 40px 60px;
+		position: relative;
+
+		
+		& > P {
+			line-height: 1.4em;
+		}
+
+	}
+	&__title {
+			font-family: PTSansB;
+			font-size: 20px;
+			text-transform: uppercase;
+			display: inline-block;
+			margin-bottom: 30px;
+			position: relative;
+			padding-bottom: 20px;
+
+		&:after{
+			content: "";
+			display: inline-block;
+			width: 60px;
+			height: 1px;
+			background: rgba(225, 225, 225, 0.5);
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -30px;
+		}
+	}
+	&__autor {
+			
+			font-size: 20px;
+			text-align: right;
+			display: block;
+			
+		}
+
+		&__link{
+			position: absolute;
+			bottom: 60px;
+			font-family: PTSansB;
+			font-size: 17px;
+			left: 40%;
+			color: white;
+			text-decoration: underline;
+		}
+}
+
+.regular{
+	
+	
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	border: 3px solid rgba(225, 225, 225, 0.5);
+	border-radius: 5px;
+	margin-top: 40px;
+}
+
+.arrow{
+	position: absolute;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	border-radius: 20px;
+	background: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(225, 225, 225, 0.7);
+	bottom: 34%;
+	background-repeat: no-repeat;
+	&_left{
+		left: -50px;
+		background-image: url(/images/right.png);
+		background-position: 45% 50%;
+		
+		&:hover, &:active{
+			background: rgba(0, 0, 0, 0.5);
+			background-image: url(/images/right.png);
+			background-position: 45% 50%;
+			background-repeat: no-repeat;
+		}
+	}
+	&_right{
+		right: -50px;
+		background-image: url(/images/left.png);
+		background-position: 57% 50%;
+
+		&:hover, &:active{
+			background: rgba(0, 0, 0, 0.5);
+			background-image: url(/images/left.png);
+			background-position: 57% 50%;
+			background-repeat: no-repeat;
+		}
+	}
+
+}
+@media (min-width: 1000px) {
+
+}
+@media (min-width: 400px) and (max-width: 1000px){
+	.example{
+		position: relative;
+
+		&__item{
+			
+			& > P {
+				margin-bottom: 60px;
+			}
+		}
+		
+		&__autor {
+				
+				position: relative;
+				top: -50px;
+				font-size: 12px;
+				
+			}
+
+		&__link{
+			bottom: 30px;
+			left: 35%;
+		}
+	}
+}
+@media (max-width: 600px){
+	
+	.example__item{
+		height: auto;
+		padding: 40px 10px;
+	}
+	.example__autor{
+		font-size: 12px;
+		margin-bottom: 30px;
+	}
+	.example__link{
+		bottom: 30px;
+			left: 17%;
+	}
+	.arrow{
+		&_left{
+			left: -40px;
+		}
+
+		&_right{
+			right: -40px;
+		}
+	}
+}
+
+
+

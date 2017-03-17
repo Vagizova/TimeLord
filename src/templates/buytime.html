@@ -1,0 +1,27 @@
+
+{% set step = [
+	{"img": "/images/1step.png", "text": "Зарегистрируйтесь<br>на сайте"
+	},
+	{"img": "/images/2step.png", "text": "Выберите<br>товар"
+	},
+	{"img": "/images/3step.png", "text": "Оплатите<br>покупку"
+	}
+]%}
+
+<div class="buytime blue-block" id="buy">
+	<span>Купить время</span><br>
+	<span>очень просто</span><br>
+	<span>3 шага</span>
+	<ul class="buytime__list">
+	{% for item in step %}
+		<li class="buytime__item">
+			<img src="{{ item.img }}">
+			<span>{{ item.text }}</span>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+
+
+
+

@@ -1,0 +1,44 @@
+{% set cost = [
+	{"title" :"Подарите", "subtitle": "Время","cost": "1 руб.",
+	"list": [
+		{ "item": "романтичный подарок любимому человеку на вечность,  который  останется даже после жизни."},
+		{ "item": "оригинальный подарок для друга! Вы можете выгодно выделиться среди других поздравителей."}
+		]
+	},
+	{"title" :"посыл", "subtitle": "Во вселенную","cost": "4 руб.",
+	"list": [
+		{ "item": "вы можете высказать анонимно  любой посыл в мир. Что вас  заботит, озадачивает, и т.д."},
+		{ "item": "отдать дань уважения каким-то событиям мировой значимости."}
+		]
+	},
+	{"title" :"Запечатлите", "subtitle": "событие","cost": "5 руб.",
+	"list": [
+		{ "item": "В вашей жизни случилось радостное событие? Запечатлите его навечно."},
+		{ "item": "Вы интересно проводите время, расскажите об этом всему миру."}
+		]
+	}
+]%}
+<div class="usetime block" id="use">
+	<span>Используйте время</span><br>
+	<span>По-разному</span>
+
+	<ul class="usetime__list">
+		{% for item in cost %}
+			<li class="usetime__item">
+				
+				<span class="usetime__title">{{ item.title }}</span><br>
+				<span class="usetime__subtitle">{{ item.subtitle }}</span>
+				<ul class="usetime__point-list">
+					{% for items in item.list %}
+						<li class="usetime__point-item">{{ items.item }}</li>
+					{% endfor %}
+				</ul>
+				<div class="usetime__cost">
+					<span>Cтоимость всего:</span><br>
+					<span>{{ item.cost }}</span><br>
+					<a class="button" href="">Подарить время</a>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

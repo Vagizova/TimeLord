@@ -1,0 +1,166 @@
+@import "var";
+
+html, body{
+	height: 100%;
+}
+
+img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.page{
+    -webkit-font-smoothing: antialiased;
+  
+    font-weight: 300;
+    color: @c-black;
+    background-color: @c-white;
+
+    &__inner{
+    }
+
+    &__footer{
+        height: 100px;
+    }
+}
+.block{
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 75%;
+    padding: 50px 0;
+
+    & > span{
+        
+        text-transform: uppercase;
+
+        &:nth-of-type(1){
+            font-family: CenturyGothic;
+            color: white;
+            font-size: 32px;
+            
+        }
+        &:nth-of-type(2){
+            font-family: PTSansB;
+            color: #74eaec;
+            font-size: 32px;
+            margin: 10px 0 25px 0;
+            display: inline-block;
+            
+        }
+    }
+}
+.blue-block{
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 75%;
+    padding: 50px 0;
+    text-align: center;
+
+    & > span{
+        
+        text-transform: uppercase;
+
+            color: white;
+
+        &:nth-of-type(1){
+            font-family: CenturyGothicB;
+            color: white;
+            font-size: 35px;
+            
+        }
+        &:nth-of-type(2){
+            font-family: CenturyGothic;
+            font-size: 35px;
+            margin: 10px 0 25px 0;
+            display: inline-block;
+            
+        }
+        &:nth-of-type(3){
+            font-family: Comfortaa;
+            font-size: 20px;
+            margin: 10px 0 25px 0;
+            display: inline-block;
+            
+        }
+    }
+}
+
+.container{
+    background-image: url(../images/sait.png);
+    position: relative;
+    background-repeat: no-repeat;
+   
+    margin-top: -230px;
+    padding-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+a{
+    color: @c-link;
+    text-decoration: none;
+
+    
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+p{
+    margin-bottom: 1em;
+}
+
+.text{
+    padding-top: 30px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    zoom:1; /* Хак для IE 6 и 7 */
+}
+
+@media  (max-width: 1000px){
+.container{
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+.blue-block, .block{
+    
+    padding: 50px 0 0 0;
+    
+    }
+}
+@media (min-width: 1000px){
+.container{
+
+    background-size: 100%;
+    }
+}
+
+@media (max-width: 600px){
+.container{
+
+    background-image: url(../images/mobfon.png);
+    background-size: 100%;
+    }
+}
