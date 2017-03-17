@@ -15,16 +15,17 @@
 		right: 40px;
 		width: 300px;
 	}
+
 	& > span{
 		text-transform: uppercase;
 		font-family: PTSansB;
 		font-size: 30px;
-		
 	}
 
 	&__title{
 			color: #74eaec;
 	}
+
 	&__list{
 		
 		list-style: disc;
@@ -33,11 +34,12 @@
 		font-size: 16px;
 		margin: 30px;
 		margin-left: 60px;
-		
 	}
+
 	&__item{
 		margin-bottom: 10px;
 	}
+
 	&__link{
 		text-transform: uppercase;
 		font-family: PTSansB;
@@ -48,10 +50,12 @@
 		text-decoration: underline;
 		cursor: pointer;
 	}
+
 	&__button{
 		position: absolute;
 		bottom: -10px;
 		right: 100px;
+
 		&:after{
 			content: "";
 			display: inline-block;
@@ -67,30 +71,11 @@
 
 @media (min-width: 1000px) {
 .losstime{
-	
 
-	& > img{
-		
-	}
-	& > span{
-		
-		
-	}
-
-	&__title{
-			
-	}
 	&__list{
-		width: 50%;
-		
-		
+		width: 50%;		
 	}
-	&__item{
-		
-	}
-	&__link{
-		
-	}
+
 	&__button{
 		
 		&:after{
@@ -102,19 +87,18 @@
 @media  (max-width: 1000px){
 	.losstime{
 	
+		& > img{
+			display: none;
+		}
 
-	& > img{
-		display: none;
-	}
-
-	&__button{
-		bottom: -15px;
-		right: 30px;
-		&:after{
-			content: none;
+		&__button{
+			bottom: -15px;
+			right: 30px;
+			&:after{
+				content: none;
+			}
 		}
 	}
-}
 }
 @media  (max-width: 600px){
 	.losstime__button{
@@ -129,6 +113,7 @@
 		box-sizing: border-box;
 		text-align: center;
 	}
+	
 	.losstime__list{
 		margin: 30px;
 		margin-right: 0;

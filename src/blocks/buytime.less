@@ -1,9 +1,9 @@
 .buytime{
-
 	&__list{
 		display: flex;
 		justify-content: space-around;
 	}
+
 	&__item{
 		display: flex;
 		flex-direction: column;
@@ -15,10 +15,12 @@
             font-size: 18px;
             color: white;
 		}
+
 		& > img {
 			margin-top: 30px;
 			margin-bottom: 20px;
 		}
+
 		&:after{
 			content: "";
 			display: inline-block;
@@ -29,6 +31,7 @@
 			top: 100px;
 			right: -95px;
 		}
+
 		&:last-child:after{
 			content: "";
 			display: inline-block;
@@ -42,28 +45,23 @@
 	}
 }
 
-@media (min-width: 1000px) {
 
-}
 @media  (max-width: 1000px){
 	.buytime{
 		&__list{
-		flex-direction: column;
+			flex-direction: column;
 		}
 
 		&__item{
-		
 
-		&:after{
-			content: none;
+			&:after{
+				content: none;
 			}
 		}
 	}
 }
 @media (max-width: 600px){
-	
 	.buytime.blue-block{
 		width: 40%;
 	}
-
 }

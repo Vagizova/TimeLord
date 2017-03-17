@@ -21,11 +21,9 @@
 <div class="usetime block" id="use">
 	<span>Используйте время</span><br>
 	<span>По-разному</span>
-
 	<ul class="usetime__list">
 		{% for item in cost %}
 			<li class="usetime__item">
-				
 				<span class="usetime__title">{{ item.title }}</span><br>
 				<span class="usetime__subtitle">{{ item.subtitle }}</span>
 				<ul class="usetime__point-list">
@@ -36,7 +34,7 @@
 				<div class="usetime__cost">
 					<span>Cтоимость всего:</span><br>
 					<span>{{ item.cost }}</span><br>
-					<a class="button" href="">Подарить время</a>
+					<a class="button" href="https://www.niocoins.com/" target="_blank">Подарить время</a>
 				</div>
 			</li>
 		{% endfor %}
